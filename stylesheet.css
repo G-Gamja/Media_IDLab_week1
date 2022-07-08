@@ -1,0 +1,33 @@
+/*class*/
+/*css에서 flex,grid공부해오기
+애니메이션은 css로 처리하는게 쓰레드 부하 안걸림
+*/
+.test{
+    color: red;
+    font-size: 40px;
+    border-radius: 0%
+    f
+    /* transition: border-radius 0.2s; */
+}
+.test:hover{
+    color: aqua;
+}
+/*tag*/
+button{
+    border-radius: 40px;
+}
+.newButton{
+    display: flex;
+    flex-direction: row;
+}
+.drawer{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: white;
+    border: red;
+    background: black;
+    justify-content: left;
+    height: 600;
+}
