@@ -106,6 +106,19 @@ button{
     color: white;
     background: deeppink;
 }
+.nav_underbar_button{
+    background-color: transparent;
+    color: white;
+    border: 0;
+    outline: 0;
+}
+.underBar{
+    width: 50px;
+    height: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #00A82D   ;
+}
 /* .searchTextArea{
     margin: 20px;
     box-sizing: border-box;
@@ -157,6 +170,37 @@ button{
     margin-right: 10px;
     justify-content: space-between;
   align-items: center;
+}
+.row_start{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 30px;
+    padding-right: 10px;
+    justify-content: start;
+  align-items: center;
+  
+}
+.row_around{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 30px;
+    padding-right: 10px;
+    justify-content: space-around;
+  align-items: center;
+  
+}
+.row_center{
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  align-items: center;
+  
 }
 .drawer{
     background-color: black;
@@ -214,6 +258,31 @@ background-color: beige;
     background-color: #333;
     border-radius: 10px;
 }
+.rec_container2{
+    position: relative;
+    /* top: 100px;
+    left: 20px; */
+    z-index: 4;
+    margin-top: 30px;
+
+    width: 170px;
+    height: 250px;
+    color: black;
+    background-color: white;
+    opacity: 0.2;
+
+    border-radius: 10px;
+}
+.rec_container_captureList{
+    position: absolute;
+    top: 550px;
+    left: 70px;
+    z-index: 3;
+    width: 1100px;
+    height: 220px;
+    background-color: #333;
+    border-radius: 10px;
+}
 .scratch_pad{
     display: flex;
     flex-direction: column;
@@ -237,6 +306,7 @@ justify-content: center;
  border: transparent;
  
 }
+
 /* #scratch_pad::placeholder{
 
      
