@@ -73,9 +73,38 @@ button{
     background-color: #404040;
     display: flex;
     flex-direction: row;
+    
   justify-content: center;
   align-items: center;
   
+}
+.no_back_button{
+    display: inline-block;;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+.no_back_button:hover {
+    color: white;
+    background-color: beige;
+    border: 0;
+    outline: 0;
+}
+.no_back_button:hover .tooltip-text {
+    display: block;
+  }
+.tooltip-text{
+    bottom: 100%; left: 100%; margin-left: -150px;
+    display: none;
+    position: absolute;
+    /* max-width: 200px; */
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.8em;
+    color: white;
+    background: deeppink;
 }
 /* .searchTextArea{
     margin: 20px;
@@ -111,11 +140,23 @@ button{
     background-image: url(./images/gamja.JPG);
 }
 .home_headLine{
+    margin-left: 30px;
+    margin-right: 60px;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 20px;
 
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+  align-items: center;
 }
 .drawer{
     background-color: black;
@@ -132,20 +173,71 @@ button{
     border: red;
     background: black;
     justify-content: left;
-   align-content: center;
+   align-content: stretch;
     height: 600;
     border: solid;
     border-color: aliceblue;
 }
-.mainField{
+.mainField ul li{
+    list-style-type : none;
+  
     margin-top: 29px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    left: 10px;
+
+  
+    /* justify-content: space-around;
     justify-items: stretch;
-    align-items: stretch;
+    align-items: stretch; */
     color: white;
 }
-.mainField:hover{
-color: aqua;
+.mainField ul li:hover{
+background-color: beige;
 }
+
+.rec_container{
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    z-index: 3;
+    width: 700px;
+    height: 400px;
+    background-color: #333;
+    border-radius: 10px;
+}
+.rec_container1{
+    position: absolute;
+    top: 100px;
+    left: 850px;
+    z-index: 3;
+    width: 330px;
+    height: 400px;
+    background-color: #333;
+    border-radius: 10px;
+}
+.scratch_pad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     color: white;
+     width: 100%;
+     height: 70%;
+     background-color: transparent;
+    
+    }
+#scratch_pad{
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+ color: white;
+ width: 90%;
+ height: 100%;
+ background-color: transparent;
+ border: transparent;
+ 
+}
+/* #scratch_pad::placeholder{
+
+     
+    } */
