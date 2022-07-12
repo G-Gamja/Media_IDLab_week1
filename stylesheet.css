@@ -95,10 +95,11 @@ button{
     display: block;
   }
 .tooltip-text{
-    bottom: 100%; left: 100%; margin-left: -150px;
+    bottom: 100%; left: 100%; 
+    margin-left: -95px;
     display: none;
     position: absolute;
-    /* max-width: 200px; */
+    max-width: 200px;
     border: 1px solid;
     border-radius: 5px;
     padding: 5px;
@@ -194,19 +195,17 @@ button{
   
 }
 .row_center{
-
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
-  align-items: center;
+    align-items: center;
   
 }
 .drawer{
     background-color: black;
-    width: 300px;
+    width: 200px;
     height: 100%;
-    justify-content: space-around;
+   
     width: 200px;
     height: 800px;
     font-size: 20px;
@@ -222,11 +221,23 @@ button{
     border: solid;
     border-color: aliceblue;
 }
+/* 리스트 왼쪽정렬이 안됨 */
+.mainField_item{
+    text-align: start;
+    /* display: flex;
+    flex-direction: row; */
+    
+}
+ul{
+    background-color: #00A82D;
+    
+}
 .mainField ul li{
     list-style-type : none;
-  
-    margin-top: 29px;
-    left: 10px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 10px;
+    text-align: start;
 
   
     /* justify-content: space-around;
@@ -247,6 +258,15 @@ background-color: beige;
     height: 400px;
     background-color: #333;
     border-radius: 10px;
+}
+#note_main{
+    color: white;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+#note_main:hover{
+    color: bisque;
 }
 .rec_container1{
     position: absolute;
